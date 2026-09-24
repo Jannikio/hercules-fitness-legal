@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>Privacy Policy – Hercules Fitness</title>
+  <meta name="description" content="What personal data the Hercules Fitness app processes, why, and how to delete your account.">
+  <style>
+    :root {
+      --background: #000000;
+      --surface: #0a0a0a;
+      --surface-raised: #161616;
+      --border: #2a2a2a;
+      --text: #ffffff;
+      --body: #c4c4c4;
+      --muted: #8a8a8a;
+      --subtle: #6b6b6b;
+      --accent: #3b82f6;
+      --accent-text: #93c5fd;
+      --accent-soft: rgba(59, 130, 246, 0.14);
+      --accent-border: rgba(59, 130, 246, 0.35);
+      --on-accent: #ffffff;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --background: #f5f5f5;
+        --surface: #ffffff;
+        --surface-raised: #f0f0f0;
+        --border: #dedede;
+        --text: #111111;
+        --body: #333333;
+        --muted: #5c5c5c;
+        --subtle: #6b6b6b;
+        --accent: #1d4ed8;
+        --accent-text: #1d4ed8;
+        --accent-soft: rgba(29, 78, 216, 0.07);
+        --accent-border: rgba(29, 78, 216, 0.3);
+        --on-accent: #ffffff;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--background);
+      color: var(--body);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(760px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 56px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 40px;
+      color: var(--text);
+    }
+
+    .mark {
+      display: grid;
+      place-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      background: var(--surface-raised);
+      border: 1px solid var(--border);
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+
+    .brand-text {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+
+    .panel {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--surface);
+      padding: 32px;
+    }
+
+    h1, h2, h3 {
+      color: var(--text);
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(32px, 6vw, 48px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .updated {
+      margin: 0 0 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .intro {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      line-height: 1.3;
+      scroll-margin-top: 16px;
+    }
+
+    h3 {
+      margin: 20px 0 6px;
+      font-size: 16px;
+      line-height: 1.35;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul {
+      margin: 0 0 12px;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: var(--accent-text);
+    }
+
+    strong {
+      color: var(--text);
+    }
+
+    section {
+      padding-top: 28px;
+      margin-top: 28px;
+      border-top: 1px solid var(--border);
+    }
+
+    nav.contents {
+      margin: 0 0 8px;
+      padding: 16px 20px;
+      border-radius: 8px;
+      background: var(--surface-raised);
+      border: 1px solid var(--border);
+      font-size: 15px;
+    }
+
+    nav.contents p {
+      margin: 0 0 6px;
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    nav.contents ol {
+      margin: 0;
+      padding-left: 22px;
+      columns: 2;
+      column-gap: 28px;
+    }
+
+    nav.contents li {
+      margin-bottom: 4px;
+      break-inside: avoid;
+    }
+
+    .callout {
+      padding: 24px;
+      border-radius: 8px;
+      border: 1px solid var(--accent-border);
+      background: var(--accent-soft);
+    }
+
+    .callout h2 {
+      font-size: 24px;
+    }
+
+    .action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      margin: 4px 0 16px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: var(--on-accent);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .action:hover {
+      filter: brightness(1.08);
+    }
+
+    .steps {
+      padding-left: 22px;
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    footer {
+      margin-top: 24px;
+      color: var(--subtle);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 560px) {
+      main {
+        width: min(100% - 24px, 760px);
+        padding: 28px 0;
+      }
+
+      .panel {
+        padding: 22px;
+      }
+
+      .callout {
+        padding: 18px;
+      }
+
+      .action {
+        width: 100%;
+      }
+
+      nav.contents ol {
+        columns: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand" aria-label="Hercules Fitness">
+      <div class="mark" aria-hidden="true">HF</div>
+      <div class="brand-text">Hercules Fitness</div>
+    </div>
+
+    <div class="panel">
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: 24 September 2026</p>
+
+      <p class="intro">
+        This policy explains what personal data the Hercules Fitness app processes, why, and what you
+        can do about it. In short: Hercules works without an account, and without one your workouts
+        never leave your phone. Signing in is optional and only needed to back up and sync your data.
+      </p>
+
+      <nav class="contents" aria-label="Contents">
+        <p>Contents</p>
+        <ol>
+          <li><a href="#delete-account">Delete your account</a></li>
+          <li><a href="#controller">Who is responsible</a></li>
+          <li><a href="#without-account">Using Hercules without an account</a></li>
+          <li><a href="#sign-in-and-sync">Signing in and syncing</a></li>
+          <li><a href="#technical-data">Technical data</a></li>
+          <li><a href="#contact">Contacting us</a></li>
+          <li><a href="#service-providers">Service providers</a></li>
+          <li><a href="#transfers">Transfers outside the EU</a></li>
+          <li><a href="#retention">How long data is kept</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#what-we-dont-do">What Hercules doesn't do</a></li>
+          <li><a href="#your-rights">Your rights</a></li>
+          <li><a href="#children">Children</a></li>
+          <li><a href="#this-website">This website</a></li>
+          <li><a href="#changes">Changes to this policy</a></li>
+        </ol>
+      </nav>
+
+      <section class="callout" id="delete-account" aria-labelledby="delete-account-title">
+        <h2 id="delete-account-title">1. Delete your account</h2>
+        <p>You can delete your Hercules account and everything synced with it at any time.</p>
+
+        <h3>In the app</h3>
+        <ol class="steps">
+          <li>Open <strong>Settings</strong>.</li>
+          <li>Tap the menu (&#8942;) next to your account and choose <strong>Delete Account</strong>.</li>
+          <li>Confirm.</li>
+        </ol>
+        <p>
+          Your account and all your synced data are deleted from our servers right away, and the synced
+          data is removed from that phone.
+        </p>
+
+        <h3>Without the app</h3>
+        <p>
+          Email us from the email address of your account. We delete the account within 30 days and
+          confirm by email.
+        </p>
+        <a class="action" href="mailto:herculesfitnessapp@gmail.com?subject=Hercules%20Fitness%20account%20deletion">
+          Request deletion by email
+        </a>
+        <p class="small">
+          If you signed in with Apple and chose &ldquo;Hide My Email&rdquo;, tell us the relay address Apple
+          created for Hercules. You find it in your Apple Account settings under Sign in with Apple.
+        </p>
+
+        <h3>What is deleted</h3>
+        <p>
+          Your account (user ID, email address and name) and all synced data: workouts, sets, exercise
+          order, templates, custom exercises and settings.
+        </p>
+
+        <h3>Data that is only on your phone</h3>
+        <p>
+          Without an account, your data exists only on your phone. Deleting the app deletes it.
+        </p>
+
+        <h3>Backups</h3>
+        <p>
+          Copies in our service providers' backups are deleted when those backups expire. We never
+          restore a deleted account from them.
+        </p>
+      </section>
+
+      <section id="controller">
+        <h2>2. Who is responsible</h2>
+        <p>
+          The controller responsible for processing your personal data under the EU General Data
+          Protection Regulation (GDPR) is:
+        </p>
+        <p>
+          <strong>Jannik Spilker</strong>, Germany<br>
+          Email: <a href="mailto:herculesfitnessapp@gmail.com">herculesfitnessapp@gmail.com</a>
+        </p>
+      </section>
+
+      <section id="without-account">
+        <h2>3. Using Hercules without an account</h2>
+        <p>
+          Every feature of Hercules works without an account. Your workouts, templates, custom exercises
+          and settings are then stored only in a database on your phone, in storage that only the app can
+          access. We don't receive any of it, and you don't give us any personal details.
+        </p>
+        <p>
+          Storing this data on your phone is technically necessary for the app to do what you ask of it
+          (&sect; 25(2) no. 2 TDDDG), so no consent is required. The data stays until you delete it in
+          the app or delete the app.
+        </p>
+        <p>
+          Hercules asks for no device permissions besides internet access, which only sign-in and sync
+          use. It doesn't access your location, contacts, camera, microphone, photos or health data.
+        </p>
+      </section>
+
+      <section id="sign-in-and-sync">
+        <h2>4. Signing in and syncing</h2>
+        <p>
+          Signing in is optional. It backs up your data on our servers and keeps it in sync across your
+          devices.
+        </p>
+
+        <h3>Sign-in</h3>
+        <p>
+          You can sign in with Google or with Apple. Through our sign-in service (Supabase Auth) we then
+          receive a user ID, your email address and, if the provider shares it, your name. With Google we
+          also receive a link to your profile picture. With Apple you can hide your email address; we
+          then receive a relay address instead. Google and Apple process data for the sign-in itself
+          under their own privacy policies (see <a href="#service-providers">section 7</a>).
+        </p>
+
+        <h3>Synced data</h3>
+        <p>While you are signed in, the app syncs your training data:</p>
+        <ul>
+          <li>workouts: start and end time, notes and the template used</li>
+          <li>sets: weight, reps, RPE and their order</li>
+          <li>the order of the exercises in each workout</li>
+          <li>templates: name, description and exercises with target sets, reps and notes</li>
+          <li>custom exercises: name, muscle group and equipment</li>
+          <li>settings: weight unit and theme</li>
+        </ul>
+        <p>
+          Each entry includes the time it was created and last changed. Data you created before signing
+          in is added to your account when you sign in. Hercules doesn't record body measurements,
+          health conditions or other medical information.
+        </p>
+
+        <h3>Your profile picture</h3>
+        <p>
+          If you sign in with Google, Settings shows your Google profile picture, which the app loads
+          from Google's servers. Google receives your IP address when the picture loads.
+        </p>
+
+        <h3>Legal basis</h3>
+        <p>
+          We process this data to provide the account and sync you asked for (Art. 6(1)(b) GDPR).
+          Signing out stops syncing on that phone; your data stays on the phone.
+        </p>
+      </section>
+
+      <section id="technical-data">
+        <h2>5. Technical data</h2>
+        <p>
+          When the app connects to our servers, Supabase and PowerSync process the technical data every
+          such connection needs: your IP address, the time of each request, sign-in tokens and details
+          of the app's requests. They use it to provide sign-in and sync and to protect the service
+          against misuse, and keep it in their logs for a short time.
+        </p>
+        <p>
+          Legal basis: our legitimate interest in running the service securely and reliably
+          (Art. 6(1)(f) GDPR).
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>6. Contacting us</h2>
+        <p>
+          If you email us, we use your email address and message to answer you. We keep them until your
+          request is handled, and a short note that a deletion or privacy request was handled for as long
+          as we need to show it was. Our support mailbox is a Gmail account, so Google stores the emails
+          you send us.
+        </p>
+        <p>
+          Legal basis: for requests about your account, providing our service (Art. 6(1)(b) GDPR); for
+          requests about your rights, our legal obligation to handle them (Art. 6(1)(c) GDPR); otherwise
+          our legitimate interest in answering you (Art. 6(1)(f) GDPR).
+        </p>
+      </section>
+
+      <section id="service-providers">
+        <h2>7. Service providers</h2>
+        <p>We use these services to run Hercules:</p>
+        <ul>
+          <li>
+            <strong>Supabase</strong> (Supabase Pte. Ltd., Singapore) hosts our database and sign-in service.
+            Your synced data is stored in the EU. Supabase processes it only on our behalf, under a data
+            processing agreement. <a href="https://supabase.com/privacy">Privacy policy</a>
+          </li>
+          <li>
+            <strong>PowerSync</strong> (Journey Mobile, Inc.) runs the sync service that keeps the database
+            on your phone and our database in step. It stores synced data in its US region and processes
+            it only on our behalf, under a data processing agreement.
+            <a href="https://www.powersync.com/legal/privacy-policy">Privacy policy</a>
+          </li>
+          <li>
+            <strong>Google</strong> provides Sign in with Google, Google Play and our support mailbox
+            (Gmail), and processes data for these as an independent controller.
+            <a href="https://policies.google.com/privacy">Privacy policy</a>
+          </li>
+          <li>
+            <strong>Apple</strong> provides Sign in with Apple and the App Store, and processes data for
+            these as an independent controller. <a href="https://www.apple.com/legal/privacy/">Privacy policy</a>
+          </li>
+          <li>
+            <strong>GitHub</strong> hosts this web page (see <a href="#this-website">section 14</a>).
+          </li>
+        </ul>
+        <p>
+          When you download Hercules, Google Play or the App Store processes your download under its own
+          terms. We don't sell your data or share it for advertising. We disclose it to others only where
+          the law requires us to.
+        </p>
+      </section>
+
+      <section id="transfers">
+        <h2>8. Transfers outside the EU</h2>
+        <p>
+          Synced data is stored in the EU by Supabase and in the US by PowerSync. Supabase is based in
+          Singapore and may access data stored in the EU from there, for example for support. For these
+          transfers, both providers have agreed to the European Commission's standard contractual
+          clauses (Art. 46(2)(c) GDPR).
+        </p>
+        <p>
+          Google and Apple may process sign-in data in the US; their privacy policies describe the
+          safeguards they use. Countries outside the EU may not protect data to the same level; for
+          example, US authorities may be able to access data stored in the US.
+        </p>
+      </section>
+
+      <section id="retention">
+        <h2>9. How long data is kept</h2>
+        <ul>
+          <li><strong>On your phone:</strong> until you delete it in the app or delete the app.</li>
+          <li>
+            <strong>Your account and synced data:</strong> as long as your account exists. Deleting the
+            account deletes them right away (see <a href="#delete-account">section 1</a>).
+          </li>
+          <li>
+            <strong>Entries you delete in the app:</strong> hidden on all your devices. On our servers the
+            record stays, marked as deleted, so your other devices learn about the deletion; it is erased
+            when you delete your account. Email us if you want single entries erased sooner.
+          </li>
+          <li><strong>Technical logs:</strong> for the short periods Supabase and PowerSync keep their logs.</li>
+          <li><strong>Emails:</strong> as described in <a href="#contact">section 6</a>.</li>
+          <li><strong>Backups:</strong> until the providers' backups expire; they are never used to restore deleted data.</li>
+        </ul>
+      </section>
+
+      <section id="security">
+        <h2>10. Security</h2>
+        <ul>
+          <li>All data between the app and our servers travels encrypted (HTTPS/TLS).</li>
+          <li>Each account can read and change only its own data (row-level security).</li>
+          <li>Our providers encrypt stored data on their infrastructure.</li>
+          <li>
+            On your phone, data sits in storage only the app can access, protected further by your
+            device's encryption and screen lock.
+          </li>
+        </ul>
+        <p>No system is perfectly secure, but we keep the data we process to a minimum.</p>
+      </section>
+
+      <section id="what-we-dont-do">
+        <h2>11. What Hercules doesn't do</h2>
+        <ul>
+          <li>No ads, and no analytics or tracking tools.</li>
+          <li>No selling or renting of personal data.</li>
+          <li>
+            No profiling or automated decisions (Art. 22 GDPR). Training suggestions are calculated on
+            your phone and are only suggestions.
+          </li>
+        </ul>
+      </section>
+
+      <section id="your-rights">
+        <h2>12. Your rights</h2>
+        <p>Under the GDPR you have the right to:</p>
+        <ul>
+          <li><strong>access</strong> the data we hold about you and get a copy of it (Art. 15)</li>
+          <li><strong>correct</strong> it, which you can mostly do in the app (Art. 16)</li>
+          <li><strong>erase</strong> it: delete entries or your whole account in the app, or ask us (Art. 17)</li>
+          <li><strong>restrict</strong> its processing (Art. 18)</li>
+          <li><strong>receive</strong> your synced data in a machine-readable format (Art. 20)</li>
+          <li>
+            <strong>object</strong> to processing based on our legitimate interests (sections 5, 6 and 14)
+            on grounds relating to your situation (Art. 21)
+          </li>
+          <li>
+            <strong>complain</strong> to a data protection supervisory authority, for example in the EU
+            country where you live (Art. 77)
+          </li>
+        </ul>
+        <p>
+          To use these rights, email <a href="mailto:herculesfitnessapp@gmail.com">herculesfitnessapp@gmail.com</a>. We answer
+          within one month.
+        </p>
+      </section>
+
+      <section id="children">
+        <h2>13. Children</h2>
+        <p>
+          Hercules is not intended for children under 16. If you believe a child has created an account,
+          contact us and we will delete it.
+        </p>
+      </section>
+
+      <section id="this-website">
+        <h2>14. This website</h2>
+        <p>
+          This page is hosted on GitHub Pages, a service of GitHub, Inc. (USA). When you open it, GitHub
+          processes your IP address and technical request data to deliver the page and protect its
+          service, and may keep them in its logs. The page sets no cookies and loads no analytics,
+          tracking or external fonts.
+        </p>
+        <p>
+          Legal basis: our legitimate interest in publishing this information (Art. 6(1)(f) GDPR).
+          <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>
+        </p>
+      </section>
+
+      <section id="changes">
+        <h2>15. Changes to this policy</h2>
+        <p>
+          We update this policy when Hercules or the services it uses change. The date at the top shows
+          the current version, and earlier versions are in the
+          <a href="https://github.com/Jannikio/hercules-fitness-legal/commits/main/index.html">public history of this page</a>.
+        </p>
+      </section>
+    </div>
+
+    <footer>
+      Hercules Fitness &middot; Jannik Spilker, Germany &middot; Last updated 24 September 2026
+    </footer>
+  </main>
+</body>
+</html>
